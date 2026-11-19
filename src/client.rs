@@ -73,6 +73,7 @@ struct RenewRequest<'a> {
 #[derive(Deserialize)]
 struct ProviderResponse {
     service: String,
+    #[serde(default)]
     instance_id: String,
     endpoint: String,
 }
